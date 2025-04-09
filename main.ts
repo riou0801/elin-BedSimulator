@@ -65,8 +65,13 @@ export const bed: Array<bedProperty> = [
   {
     name: "王子様ベッド",
     skill: "木工",
-    skillLevel: 60,
+    skillLevel: 40,
   },
+  {
+    name: "王様ベッド",
+    skill: "木工",
+    skillLevel: 60
+  }
 ];
 
 export const materials = {
@@ -153,7 +158,7 @@ export function bedSpec(
     (1 + 0.1 * craftQuality);
 }
 
-console.log(bedSpec("お布団", "ルビナス", 7));
+// console.log(bedSpec("お布団", "ルビナス", 7));
 
 //   return 5 + skillLevel + b;
 // }
