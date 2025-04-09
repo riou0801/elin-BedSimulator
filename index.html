@@ -1,0 +1,70 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Elin Bed Simulator</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            .form-group {
+                margin-bottom: 15px;
+            }
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+            select,
+            input {
+                width: 200px;
+                padding: 5px;
+            }
+            button {
+                padding: 10px 20px;
+                background-color: #4caf50;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            #result {
+                margin-top: 20px;
+                padding: 10px;
+                border: 1px solid #ddd;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Elin Bed Simulator</h1>
+
+        <div class="form-group">
+            <label for="bedSelect">ベッドの種類:</label>
+            <select id="bedSelect"></select>
+        </div>
+
+        <div class="form-group">
+            <label for="materialSelect">材料:</label>
+            <select id="materialSelect"></select>
+        </div>
+
+        <div class="form-group">
+            <label for="craftQuality">制作品質 (0-100):</label>
+            <input
+                type="number"
+                id="craftQuality"
+                min="0"
+                max="100"
+                value="0"
+            />
+        </div>
+
+        <button onclick="calculateSpec()">計算</button>
+
+        <div id="result"></div>
+
+        <script src="app.js" type="module"></script>
+    </body>
+</html>
