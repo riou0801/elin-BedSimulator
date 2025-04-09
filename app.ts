@@ -1,7 +1,7 @@
 
 // app.ts
 // First, include your existing types and data (bed and materials)
-import { bed, materials } from './main.ts';
+import { bed, materials, bedSpec } from './main.ts';
 
 // Populate select options when page loads
 globalThis.onload = () => {
