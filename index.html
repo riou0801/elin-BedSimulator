@@ -53,8 +53,11 @@
         <div class="form-group">
             <label for="craftQuality">制作品質 (0-100):</label>
             <input
-                type="number"
+                type="text"
                 id="craftQuality"
+                class="numeric-input"
+                pattern="[0-9]*"
+                input-mode="numeric"
                 min="0"
                 max="100"
                 value="0"
