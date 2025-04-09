@@ -140,7 +140,7 @@ const getBedObj = (name)=>{
     return bed.find((obj)=>obj.name === name);
 };
 const getSkillLevel = (name)=>{
-    return getBedObj1(name)?.skillLevel || 0;
+    return getBedObj(name)?.skillLevel || 0;
 };
 function bedSpec(name, mName, craftQuality) {
     return (5 + getSkillLevel(name) + materials[mName]) * (1 + 0.1 * craftQuality);
