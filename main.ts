@@ -70,11 +70,11 @@ export const bed: Array<bedProperty> = [
   {
     name: "王様ベッド",
     skill: "木工",
-    skillLevel: 60
-  }
+    skillLevel: 60,
+  },
 ];
 
-export const materials = {
+export const materials: Record<string, number> = {
   "紙": 7,
   "ゼリー": 10,
   "なま物": 10,
