@@ -1,6 +1,6 @@
 # Elin BedSimulator
 
-A simple web tool to calculate bed specifications in [Elin](https://en.ylion.org/).
+A simple web tool to calculate bed specifications in [Elin](https://store.steampowered.com/app/2135150/Elin/?l=japanese).
 
 ## What is this?
 
